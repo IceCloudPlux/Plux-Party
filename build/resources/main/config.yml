@@ -1,0 +1,11 @@
+party:
+  max-members: 8
+  warp-cooldown: 5
+
+invites:
+  timeout: 60
+  max-pending: 5
+
+chat:
+  enabled: true
+  prefix: "&7[&6队伍&7] "

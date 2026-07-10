@@ -1,0 +1,60 @@
+name: PluxParty
+version: ${version}
+main: com.plux.party.PluxParty
+api-version: 1.13
+authors: [ ya_xzer21145 ]
+description: Lightweight high-performance party plugin for minigame servers
+website: https://github.com/plux
+folia-supported: true
+softdepend:
+  - PlaceholderAPI
+
+commands:
+  party:
+    description: Main party command
+    aliases: [zd, p]
+    permission: party.use
+    permission-message: '&cYou do not have permission to use this command.'
+  partyadmin:
+    description: Admin commands for party plugin
+    aliases: [pa]
+    permission: party.admin
+    permission-message: '&cYou do not have permission to use this command.'
+
+permissions:
+  party.use:
+    description: Allow using basic party commands
+    default: true
+  party.create:
+    description: Allow creating a party
+    default: true
+  party.invite:
+    description: Allow inviting players to party
+    default: true
+  party.join:
+    description: Allow joining a party
+    default: true
+  party.leave:
+    description: Allow leaving a party
+    default: true
+  party.kick:
+    description: Allow kicking members from party
+    default: op
+  party.transfer:
+    description: Allow transferring party leadership
+    default: op
+  party.disband:
+    description: Allow disbanding a party
+    default: op
+  party.chat:
+    description: Allow party chat
+    default: true
+  party.tp:
+    description: Allow party teleport
+    default: true
+  party.ready:
+    description: Allow toggling ready status
+    default: true
+  party.admin:
+    description: Allow admin commands
+    default: op

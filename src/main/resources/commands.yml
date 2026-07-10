@@ -1,0 +1,10 @@
+party:
+  aliases:
+    - "zd"
+    - "p"
+  description: "主队伍指令"
+
+partyadmin:
+  aliases:
+    - "pa"
+  description: "管理员指令"
